@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Lookbook - Art Nouveau</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <main>
+        <div class="graphic-element" style="top: 5%; left: 5%; width: 20vw; height: 20vh;">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,50 Q25,0 50,50 T100,50" stroke="var(--muted-teal)" fill="none" stroke-width="2"/></svg>
+        </div>
+        <div class="graphic-element" style="bottom: 5%; right: 5%; width: 30vw; height: 40vh;">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,50 C25,100 75,100 100,50 S75,0 50,0 S25,0 0,50" stroke="var(--olive-green)" fill="none" stroke-width="1"/></svg>
+        </div>
+
+        <section id="home" class="page">
+            <div class="page-content">
+                <h1>Fleur</h1>
+            </div>
+        </section>
+
+        <section id="gallery" class="page">
+            <div class="page-content">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="assets/images/placeholder.svg" alt="placeholder"></div>
+                    <div class="gallery-item"><img src="assets/images/placeholder.svg" alt="placeholder"></div>
+                    <div class="gallery-item"><img src="assets/images/placeholder.svg" alt="placeholder"></div>
+                    <div class="gallery-item"><img src="assets/images/placeholder.svg" alt="placeholder"></div>
+                    <div class="gallery-item"><img src="assets/images/placeholder.svg" alt="placeholder"></div>
+                    <div class="gallery-item"><img src="assets/images/placeholder.svg" alt="placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <div class="page-content">
+                <h2>About</h2>
+                <div class="about-content">
+                    <img src="assets/images/placeholder.svg" alt="artist photo" class="about-photo">
+                    <p>An artist statement, inspired by the flowing, organic forms of nature and the elegance of the Art Nouveau movement.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="page-content">
+                <h2>Contact</h2>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
